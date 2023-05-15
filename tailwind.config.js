@@ -30,6 +30,7 @@ module.exports = {
       white: {
         'trans-4-percents': 'rgba(255, 255, 255, 4%)',
         'trans-14-percents': 'rgba(255, 255, 255, 14%)',
+        'trans-50-percents': 'rgba(255, 255, 255, 90%)',
       },
       text: {
         'very-white': 'hsl(0, 0%, 100%)',
@@ -55,6 +56,7 @@ module.exports = {
       gridTemplateRows: {
         'max-content-1fr': 'max-content 1fr',
         '3-max-content': 'repeat(3, max-content)',
+        '4-max-content': 'repeat(4, max-content)',
       },
       width: {
         '112%': '112%',

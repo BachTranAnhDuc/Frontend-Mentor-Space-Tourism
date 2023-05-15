@@ -1,9 +1,15 @@
+'use client';
+
 import { NextPage } from 'next';
 import Link from 'next/link';
+
+import { useAppSelector, useAppDispatch } from '@/redux/hook';
 
 interface Props {}
 
 const page: NextPage<Props> = () => {
+  // const getLink = useAppSelector((state) => state.pageReducer.link);
+
   return (
     <section className="h-full grid md:content-center">
       <div className="py-12 md:px-24 sm:px-10 grid 2xl:grid-cols-2 sm:grid-cols-1 sm:grid-rows-max-content-1fr md:items-end sm:items-center 2xl:gap-x-10 md:gap-x-0 2xl:gap-y-0 md:gap-y-20 sm:gap-y-5">
