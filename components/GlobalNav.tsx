@@ -21,8 +21,6 @@ interface Props {}
 const GlobalNav: FC<Props> = (props): JSX.Element => {
   const currentPath = usePathname();
 
-  // const getLink = useAppSelector((store) => store.pageReducer.link);
-  const isOpenNav = useAppSelector((store) => store.pageReducer.isOpenNav);
   const dispatch = useAppDispatch();
 
   return (
@@ -48,17 +46,10 @@ const GlobalNav: FC<Props> = (props): JSX.Element => {
 
       <div className="sm:hidden sm:invisible 2xl:visible 2xl:inline-block h-[1px] 3xl:w-112% 2xl:w-122 bg-white-trans-14-percents"></div>
 
-      <div className="sm:hidden sm:invisible md:visible bg-white-trans-4-percents 3xl:px-20 2xl:px-20 md:px-10 2xl:py-0 md:grid 2xl:grid-cols-4 md:grid-cols-4-max-content justify-items-center 3xl:gap-x-8 md:gap-x-4 2xl:gap-y-2 md:justify-self-end">
+      <div className="sm:hidden sm:invisible md:visible bg-white-trans-4-percents 3xl:px-20 2xl:px-20 md:px-10 2xl:py-0 md:grid 2xl:grid-cols-4 md:grid-cols-4-max-content justify-items-center 3xl:gap-x-8 md:gap-x-4 2xl:gap-y-2 md:justify-self-end backdrop-blur-sm">
         {navLink.map(({ id, num, name, href }) => {
           return (
-            <Link
-              key={id}
-              href={href}
-              className=""
-              // onClick={() => {
-              //   dispatch(onClickLink(href));
-              // }}
-            >
+            <Link key={id} href={href} className="">
               <div className="relative 2xl:py-10 md:py-8 grid 2xl:grid-cols-mincontent-1fr items-center gap-x-2">
                 <h1 className="2xl:inline-block md:hidden font-extrabold 2xl:text-2xl md:text-lg text-text-very-white tracking-widest">
                   {num}

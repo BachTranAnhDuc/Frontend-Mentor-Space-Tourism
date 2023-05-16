@@ -43,6 +43,8 @@ module.exports = {
         'bg-desktop': "url('../assets/home/background-home-desktop.jpg')",
         'bg-tablet': "url('../assets/home/background-home-tablet.jpg')",
         'bg-mobile': "url('../assets/home/background-home-mobile.jpg')",
+        'bg-desktop-destination':
+          "url('../assets/destination/background-destination-desktop.jpg')",
       },
       gridTemplateColumns: {
         'global-nav': 'max-content 1fr max-content',
@@ -57,6 +59,7 @@ module.exports = {
         'max-content-1fr': 'max-content 1fr',
         '3-max-content': 'repeat(3, max-content)',
         '4-max-content': 'repeat(4, max-content)',
+        destination: 'max-content 1fr repeat(2, max-content)',
       },
       width: {
         '112%': '112%',
